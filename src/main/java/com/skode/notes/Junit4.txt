@@ -1,0 +1,96 @@
+Junit4
+//Annotations
+/*
+@Test
+@Test(timeout = 2000)
+@BeforeClass
+@AfterClass
+@Before
+@After
+
+Assert.assertEquals(expected,result);
+
+# Dependency
+junit
+
+<dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+</dependency>
+
+*/
+
+Junit5
+
+Junit-5 is a composed of several different modules.
+Junit Platform + Junit Jupiter + Junit Vintage
+
+Junit Vintage:
+Provide Support for junit 4 & 5 Backend compatibility
+
+Junit Jupiter:
+* New programming and extension model for writing tests.
+* New Annotations
+* TestEngine Implementation
+
+
+Junit Platform:
+* TestEngine API
+* Responsible for launching testing framework on JVM.
+* Annotations
+@Test
+@BeforeAll
+@AfterAll
+@BeforeEach
+@AfterEach
+@DisplayName
+@Disabled
+@Tag
+@Nested
+@TestFactory
+
+* Assertion : It is a process of validating actual result with expected result
+Assertions.assertEquals - to check same value
+Assertions.assertArrayEquals - to check same array
+Assertions.assertSame  - to check same object reference
+Assertions.assertNotNull
+Assertions.assertNull
+Assertions.assertNotSame
+Assertions.assertNotNull(name);
+Assertions.assertTrue
+Assertions.assertIterableEquals
+
+
+
+# Dependency
+junit-jupiter-api
+junit-jupiter-engine
+junit-jupiter-params
+
+ <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.10.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.10.1</version>
+      <scope>test</scope>
+    </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>5.10.1</version>
+      <scope>test</scope>
+    </dependency>
+
